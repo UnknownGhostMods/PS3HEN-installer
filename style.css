@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+/* rgb(153, 217, 234) #99d8ea */
+
+* {
+    transition: all 0.2s ease-in-out
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: black;
+    color: #FF8C00;
+    font-family: Inter, sans-serif;
+    padding: 5%
+}
+
+li::marker {
+    content: "- "
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(#1783a1, #1783a1);
+    background-size: 0% 0.1em;
+    background-position: 100% 95%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s;
+    color: #1783a1;
+    cursor: pointer
+}
+
+a:hover, a:focus, a:active {
+    background-position: 0% 95%;
+    background-size: 100% 0.1em
+}
+
+.greet {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.DevAvatar {
+    position: absolute;
+    top: calc(50vh - 250px);
+    right: 10%;
+    border-radius: 20px;
+    background: red;
+    color: red;
+    width: 500px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px)
+}
+
+@keyframes hover {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+.lang {
+    width: 50px;
+    display: inline;
+    margin: 0 2% 0 2%;
+    position: relative;
+}
+
+.lang:hover {
+    animation: hover 0.5s;
+}
+
+.hyper {
+    font-size: calc(100vh / 16);
+    font-weight: 900;
+    color: red;
+    top: 40%;
+    left: 10%;
+    background-image: url("https://images-ext-1.discordapp.net/external/gh9j2d05Vz0rD7d1ih2D1447DvfAam1FIHW9bHoUhWU/https/media.tenor.com/6x4DXggx_i8AAAPo/orange-design.mp4");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.me {
+font-size: calc(100vh / 20);
+    font-weight: 800;
+    background-image: url("https://images-ext-1.discordapp.net/external/gh9j2d05Vz0rD7d1ih2D1447DvfAam1FIHW9bHoUhWU/https/media.tenor.com/6x4DXggx_i8AAAPo/orange-design.mp4");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.vs {
+font-size: calc(100vh / 35);
+    font-weight: 900;
+    color: red;
+    background-image: url("https://images-ext-1.discordapp.net/external/gh9j2d05Vz0rD7d1ih2D1447DvfAam1FIHW9bHoUhWU/https/media.tenor.com/6x4DXggx_i8AAAPo/orange-design.mp4");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.test {
+  font-size: calc(100vh / 40);
+    font-weight: 900;
+    color: red;
+    background-image: url("https://images-ext-1.discordapp.net/external/gh9j2d05Vz0rD7d1ih2D1447DvfAam1FIHW9bHoUhWU/https/media.tenor.com/6x4DXggx_i8AAAPo/orange-design.mp4");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.content {
+    position: relative;
+    top: 75vh;
+}
+
+@media screen and (max-width: 1100px) {
+    .DevAvatar {
+        display: none;
+    }
+    .greet {
+        top: 49%;
+        left: 50%;
+        transform: translate(-23%, -23%);
+        text-align: center;
+      color: #FF8C00;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hyper {
+        font-size: 40px;
+      color: #FF8C00;
+    }
+}
+
+.blurs div {
+    position: fixed;
+    border-radius: 100%;
+    filter: blur(100px);
+    opacity: 0.6;
+    padding: 200px;
+    background: black;
+  color: #FF8C00;
+}
+
+#blur1 {
+    top: -30px;
+    right: -20px;
+}
+
+#blur2 {
+    bottom: -30px;
+    left: -20px;
+}
+
+.background {
+    z-index: -99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.squares li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #FF8C00;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    opacity: 0.9;
+}
+
+.squares li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.squares li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.squares li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.squares li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.squares li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.squares li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.squares li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.squares li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        border-radius: 50%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}

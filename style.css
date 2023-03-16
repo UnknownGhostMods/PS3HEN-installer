@@ -286,9 +286,9 @@ font-size: calc(100vh / 35);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: ;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: black;
+    background: ;
 }

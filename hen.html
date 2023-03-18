@@ -678,12 +678,27 @@ initROP(true);
     .h1 {
       color: black;
       text-align: center; }
-   .a {
-    color: black;
-    }
-   .a:hover {
-   color: red;
-   }
+     
+      /* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
   </style>
  </head>
 <body> <h1>If Hen Failed Check Here </h1> <a href="hen.html">Retry</a> | <a href="hen.html">Reset</a> | <a href="autohen.html">Auto Install</a> | <a href="index.html">Return Home</a></body>
